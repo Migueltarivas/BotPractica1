@@ -1,0 +1,4 @@
+biblioteca
+bibliotecas
+libros
+libro

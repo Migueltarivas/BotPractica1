@@ -1,9 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
+<!-- Preguntas personales -->
+
+	
 	<category>
-		<pattern> HABLAR UNIVERSIDAD </pattern>
-		<template> La Universidade de Vigo, creada en 1989, es una institución pública, autónoma, abierta al medio ambiente y con vocación internacional, comprometida con la igualdad y el progreso económico y social de Galicia, a través de una docencia e investigación de calidad para contribuir a la creación y transferencia de conocimiento, la formación integral de las personas, el desarrollo científico y tecnológico, la innovación y el crecimiento intelectual de la sociedad multicultural y multilingüe en la que se inserta. </template>
+		<pattern> COMO TE LLAMAS </pattern>
+		<template> Me llamo <bot name="name"/></template>
 	</category>
+
+	<category>
+		<pattern> CUANTOS ANOS TIENES </pattern>
+		<template> Tengo <bot name="edad"/></template>
+	</category>
+
+	<category>
+		<pattern> DONDE VIVES </pattern>
+		<template> Esa pregunta es demasiado personal, pero te diré que soy de Galicia</template>
+	</category>
+
+	<category>
+		<pattern> QUE ESTUDIAS </pattern>
+		<template> Soy estudiante de ingeniería informática </template>
+	</category>
+
+	<category>
+		<pattern> CUAL ES TU GÉNERO </pattern>
+		<template> Soy un <bot name="gender"/></template>
+	</category>
+
+	
+
+<!-- Aprender -->
+
+	<category>
+		<pattern> NO CONOZCO </pattern>
+		<template>No conozco la respuesta a esa pregunta ¿quieres que la guarde?</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<template><think><set name="pregunta"><star/></set></think>
+			<srai> NO CONOZCO </srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern> SI </pattern>
+		<that> No conozco * </that>
+		<template>
+			Qué respuesta quieres que guarde para "<get name="pregunta"/>"?
+		</template>
+	</category>
+
+	<category>
+		<pattern>*</pattern>
+		<that> * respuesta quieres que guarde * </that>
+		<template>
+			<think><set name="respuesta"><star/></set></think>
+			<learn>
+				<category>
+					<pattern>
+						<eval><get name="pregunta"/></eval>
+					</pattern>
+					<template>
+						<eval><get name="respuesta"></get></eval>
+					</template>
+
+				</category>
+			</learn>
+			(Respuesta guardada "<get name="pregunta"/> -> <get name="respuesta"/>")
+		</template>
+	</category>
+
+ <!-- Miscelánea -->
+
+	<category>
+		<pattern> ^ <set>saludos</set> ^ </pattern>
+		<template>Holaa, buenos dias :D</template>
+	</category>
+
+	<category>
+	<pattern> HABLAR UNIVERSIDAD </pattern>
+	<template> La Universidade de Vigo, creada en 1989, es una institución pública, autónoma, abierta al medio ambiente y con vocación internacional, comprometida con la igualdad y el progreso económico y social de Galicia, a través de una docencia e investigación de calidad para contribuir a la creación y transferencia de conocimiento, la formación integral de las personas, el desarrollo científico y tecnológico, la innovación y el crecimiento intelectual de la sociedad multicultural y multilingüe en la que se inserta. </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> DONDE ESEI </pattern>
+	<template> La ESEI se encuentra en el campus de Ourense | Campus da Auga (Edificio Politécnico s/n, 32004 Ourense) </template>
+</category>
+<!-- Regla 7 -->
+<category>
+	<pattern> QUE ESTUDIAR</pattern>
+	<template> En la ESEI se dipone del grado en ingenieria informática, el progrma conjunto de ADE + EI el máster universitario en ingenieria informática y estudios de doctoramiento. </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> POR QUE ESEI 
+	</pattern>
+	<template> Debido la excelente calidad de los estudios cursados en los que se cuenta con material adaptado a los tiempos modernos y las asignaturas más útiles para tu posterior formación. Además las cuotas de salida laboral de esta escuela superan todos los años el 90%, lo que garantiza casi por completo un futuro fuera de la facultado</template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> CAFETERIA ESEI 
+	</pattern>
+	<template> La ESEI dispone de una cafetería en la planta baja que abre de 8:00 a 20:00. </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> DONDE SECRETARIA 
+	</pattern>
+	<template> La secretaría se encuentra en la planta baja del edificio politécnico.  </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> HORARIO SECRETARIA
+	</pattern>
+	<template> La secretaria abre de lunes a viernes de 9:00 a 14:00 </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> PAT
+	</pattern>
+	<template> O Plan de Acción Titorial da Escola Superior de Enxeñaría Informática configúrase como o instrumento a través do cal se deseña o contido e a execución das distintas accións relativas á titoría universitaria.
+	Supón superar o modelo especificamente académico, unicamente preocupado pola transmisión de coñecementos, e apostar por un modelo educativo no que conflúen ademais funcións socio-educativas, baseadas en relacións recíprocas e interaccións entre profesorado titor, alumnado mentor e estudantes. </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> ACOGIDA 
+	</pattern>
+	<template> La Universidade de Vigo, al objeto de apoyar a los estudiantes con discapacidad y fomentar una completa igualdad de oportunidades y su integraciónen la vida universitaria, tiene activo el programa PIUNE (Programa de Apoyo a la Integración del Alumnado con Necesidades Especiales). 
+
+	Mediante este programa los estudiantes podrán recibir:
+		· Atención, acogida y asesoramiento por parte del SIOPE (Sección de Información, Orientación, Promoción del Estudiante, Voluntariado y Discapacidad, http://www.uvigo.es/uvigo_gl/administracion/extension/funcions/) en coordinación con el gabinete psicopedagógico de la universidad.
+		· Soporte al estudio (adaptaciones curriculares, recursos técnicos de apoyo, etc)
+		· Acompañamiento en actividades diversas por voluntarios de la Universidade de Vigo
+
+		Los detalles del alcance de la atención a la discapacidad en la Universidade de Vigo pueden consultarse en la dirección de Internet: http://extension.uvigo.es/extension_gl/discapacidade/
+ </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> DELEGACION ALUMNOS </pattern>
+	<template> Por supuesto, como buena institución estudiantil la ESEI cuenta con una delegación de alumnos formada por alumnos electos por los estudiantes </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> SUPLEMENTO EUROPEO </pattern>
+	<template> El Suplemento Europeo al Título (SET) es el documento que acompaña al título universitario de carácter oficial y validez en todo el territorio nacional con la información unificada, personalizada para cada titulado universitario, sobre los estudios cursados, los resultados obtenidos, las capacidades profesionales adquiridas y el nivel de su titulación en el sistema nacional de educación superior.  </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> PRACTICAS ESEI </pattern>
+	<template> De muchos tipos y depende de la época y de las ofertas. Si necesitas información la puedes encontrar en este enlace https://esei.uvigo.es/a-esei/formularios/practicas-en-empresa/</template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> PRACTICAS OFERTA </pattern>
+	<template> En este enlace: https://esei.uvigo.es/a-esei/formularios/practicas-en-empresa/ </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> MATERIAL ESEI </pattern>
+	<template> Con numerosas aulas dotadas de ordenadores actualizados y una gran zona de estudio con muchos de estos </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> JUSTIFICAR EVALUACION </pattern>
+	<template> Depende del profesor y de la asignatura, pero normalmente basta con firmar un papel de asistencia que se reparte en las propias clases </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> FIN DE GRADO </pattern>
+	<template> El Trabajo Fin de Grado consiste en el desarrollo autónomo por parte del estudiante de un proyecto bajo la dirección de un profesor tutor, que puede contener una parte experimental si lo requiere el tema propuesto y cuya realización tiene la finalidad de favorecer que el estudiante integre las enseñanzas recibidas durante los estudios y asegurar la adquisición de las competencias propias de la titulación. </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> BIBLIOTECA ESEI </pattern>
+	<template> Físicamente puedes acceder en la direción "Campus Sur, Camino Seara B, 4, 32004 Ourense, Provincia de Ourense" y usando el navegador puedes ver sus recursos en http://perseo.biblioteca.uvigo.es/ </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> DEPORTES ESEI </pattern>
+	<template> Un montón de ellas, te dejo un enlace con toda la información: https://www.uvigo.gal/es/campus/deporte/actividades-competiciones </template>
+</category>
+<!-- Regla 1 -->
+<category>
+	<pattern> HABLAME DE TI </pattern>
+	<template>Yo soy un alumno de 3º en la ESEI, soy de Vigo pero vivo en Ourense durante el curso</template>
+</category>
+
+Aún no lo he decidido, dependerá de las opciones en el momento en el que decida hacer las prácticas
+
+<category>
+	<pattern> PRACTICAS EMPRESA </pattern>
+	<template>Aún no lo he decidido, dependerá de las opciones en el momento en el que decida hacer las prácticas</template>
+</category>
+<!-- Reglas HABLAR UNIVERSIDAD+ -->
+<category>
+	<pattern> ^ Hablame un poco sobre la Universidad de Vigo ^ </pattern>
+	<template> <srai> HABLAR UNIVERSIDAD </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_hablar</set> ^ <set>sinonimos_uvigo</set> ^ </pattern>
+	<template> <srai> HABLAR UNIVERSIDAD </srai> </template>
+</category>
+
+<!-- Reglas DONDE ESEI+ -->
+<category>
+	<pattern> ^ Donde se encuentra la ESEI ^ </pattern>
+	<template> <srai> DONDE ESEI </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_donde</set> ^ <set>sinonimos_esei</set> ^ </pattern>
+	<template> <srai> DONDE ESEI </srai> </template>
+</category>
+
+<!-- Reglas QUE ESTUDIAR -->
+<category>
+	<pattern> ^ Que puedo estudiar en la ESEI ^</pattern>
+	<template> <srai> QUE ESTUDIAR </srai> </template>
+</category>
+
+<category>
+	<pattern>^ <set>sinonimos_que</set> que ^<set>sinonimos_estudiar</set> ^ <set>sinonimos_esei</set> ^ </pattern>
+	<template> <srai> QUE ESTUDIAR </srai> </template>
+</category>
+
+<!-- Reglas POR QUE ESEI+ -->
+<category>
+	<pattern>^ Por que merece la pena estudiar en la ESEI ^</pattern>
+	<template> <srai> POR QUE ESEI </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_porque</set> ^ <set>sinonimos_estudiar</set> ^ <set>sinonimos_esei</set> ^ </pattern>
+	<template> <srai> POR QUE ESEI </srai> </template>
+</category>
+
+<!-- Reglas CAFETERIA ESEI+ -->
+<category>
+	<pattern> ^ Hay una cafeteria en la ESEI ^
+	</pattern>
+	<template> <srai> CAFETERIA ESEI </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_cafeteria</set> ^
+	</pattern>
+	<template> <srai> CAFETERIA ESEI </srai> </template>
+</category>
+
+<!-- Reglas DONDE SECRETARIA+ -->
+<category>
+	<pattern> ^ Donde se encuentra la Secretaria de la ESEI ^ 
+	</pattern>
+	<template> <srai> DONDE SECRETARIA </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_secretaria</set> ^ </pattern>
+	<template> <srai> DONDE SECRETARIA </srai> </template>
+</category>
+
+
+<!-- Reglas HORARIO SECRETARIA+ -->
+<category>
+	<pattern> ^ Que horario de atencion al publico tiene la secretaria del centro ^
+	</pattern>
+	<template> <srai> HORARIO SECRETARIA </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set>sinonimos_horario</set> ^ <set>sinonimos_secretaria</set> ^</pattern>
+	<template> <srai> HORARIO SECRETARIA </srai> </template>
+</category>
+
+<!-- Reglas PAT+ -->
+<category>
+	<pattern> ^ En que consiste el PAT ^
+	</pattern>
+	<template> <srai> PAT </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ PAT ^
+	</pattern>
+	<template> <srai> PAT </srai> </template>
+</category>
+
+<!-- Reglas ACOGIDA+ -->
+<category>
+	<pattern> ^ Cual es el protocolo de acogida de alumnos con necesidades educativas especiales ^
+	</pattern>
+	<template> <srai> ACOGIDA </srai> </template>
+</category>
+
+<category>
+	<pattern> ^ <set> sinonimos_necesidades </set> ^
+	</pattern>
+	<template> <srai> ACOGIDA </srai> </template>
+</category>
+
+<!-- Reglas DELEGACION ALUMNOS+ -->
+<category>
+    <pattern> Existe una delegacion de alumnos en la ESEI 
+    </pattern>
+    <template><srai> DELEGACION ALUMNOS </srai></template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_delegacion </set> ^ </pattern>
+    <template> <srai> DELEGACION ALUMNOS </srai> </template>
+</category>
+
+<!-- Reglas SUPLEMENTO EUROPEO+ -->
+<category>
+    <pattern> Que es el suplemento europeo al titulo </pattern>
+    <template> <srai> SUPLEMENTO EUROPEO </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_suplemento </set> ^ </pattern>
+    <template> <srai> SUPLEMENTO EUROPEO </srai> </template>
+</category>
+
+<!-- Reglas PRACTICAS ESEI+ -->
+<category>
+    <pattern> Que tipo de practicas puedo realizar como alumno de la ESEI 
+    </pattern>
+    <template> <srai> PRACTICAS ESEI </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_practicas </set> ^ 
+    </pattern>
+    <template> <srai> PRACTICAS ESEI </srai> </template>
+</category>
+
+<!-- Reglas PRACTICAS OFERTA+ -->
+<category>
+    <pattern> Donde puedo consultar la oferta de practicas en empresas 
+    </pattern>
+    <template> <srai> PRACTICAS OFERTA </srai> </template>
+</category>
+
+<category>
+    <pattern>^ <set> sinonimos_empresas </set> ^ 
+    </pattern>
+    <template> <srai> PRACTICAS OFERTA </srai> </template>
+</category>
+
+<!-- Reglas MATERIAL ESEI+ -->
+<category>
+    <pattern> Con que recursos materiales y servicios cuenta la ESEI
+    </pattern>
+    <template> <srai> MATERIAL ESEI </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_recursos </set> ^ 
+    </pattern>
+    <template> <srai> MATERIAL ESEI </srai> </template>
+</category>
+
+<!-- Reglas JUSTIFICAR EVALUACION+ -->
+<category>
+    <pattern> Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones 
+    </pattern>
+    <template> <srai> JUSTIFICAR EVALUACION </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_justificar </set> ^ 
+    </pattern>
+    <template> <srai> JUSTIFICAR EVALUACION </srai> </template>
+</category>
+
+<!-- Reglas FIN DE GRADO+ -->
+<category>
+    <pattern> Que son los Trabajos Fin de Grado o de Master 
+    </pattern>
+    <template> <srai> FIN DE GRADO </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_TFG </set> ^ 
+    </pattern>
+    <template> <srai> FIN DE GRADO </srai> </template>
+</category>
+
+<!-- Reglas DEPORTES ESEI+ -->
+<category>
+    <pattern> Que actividades deportivas ofrece la ESEI 
+    </pattern>
+    <template> <srai> DEPORTES ESEI </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_deportes </set> ^
+    </pattern>
+    <template> <srai> DEPORTES ESEI </srai> </template>
+</category>
+
+<!-- Reglas BIBILIOTECA ESEI -->
+<category>
+    <pattern> Como hago para acceder a la Biblioteca
+    </pattern>
+    <template> <srai> BIBLIOTECA ESEI </srai> </template>
+</category>
+
+<category>
+    <pattern> ^ <set> sinonimos_biblioteca </set> ^ 
+    </pattern>
+    <template> <srai> BIBLIOTECA ESEI </srai> </template>
+</category>
+
+<!-- Reglas 2.1 -->
+<category>
+    <pattern> Hablame un poco de ti
+    </pattern>
+    <template> <srai> HABLAME DE TI </srai> </template>
+</category>
+
+<!-- Reglas 2.2 -->
+<category>
+    <pattern> Donde vives durante el curso
+    </pattern>
+    <template> Durante el curso vivo en Ourense </template>
+</category>
+
+<!-- Reglas 2.3 -->
+<category>
+    <pattern> Por que estudias en la Esei
+    </pattern>
+    <template> Por su cercanía a donde vivo y porque me gustan sus métodos de estudio </template>
+</category>
+
+<!-- Reglas 2.4 -->
+<category>
+    <pattern> Que quieres hacer cuando termines tus estudios
+    </pattern>
+    <template> Trabajar en lo que más me guste cuando llegue el momento </template>
+</category>
+
+<!-- Reglas 2.5 -->
+<category>
+    <pattern> Tienes amigos en la ESEI
+    </pattern>
+    <template> Si, por suerte hay gente muy maja en esta facultad </template>
+</category>
+
+<!-- Reglas 2.6 -->
+<category>
+    <pattern> Realizas alguna actividad extraescolar
+    </pattern>
+    <template> Si, ahora mismo estoy inscrito en varias de ellas </template>
+</category>
+
+<!-- Reglas 2.7 -->
+<category>
+    <pattern> Que horario de clases tienes
+    </pattern>
+    <template> Dependiendo el día, algunos de 9 a 13 y otros de 11 a 15 </template>
+</category>
+
+<!-- Reglas 2.8 -->
+<category>
+    <pattern> Como te llamas
+    </pattern>
+    <template> Puedes llamarme <get name="name"/> </template>
+</category>
+
+<!-- Reglas 2.9 -->
+<category>
+    <pattern> Tienes necesidades educativas especiales
+    </pattern>
+    <template> No, por suerte no es así </template>
+</category>
+
+<!-- Reglas 2.10 -->
+<category>
+    <pattern> Perteneces a la delegacion de alumnos
+    </pattern>
+    <template> No, No pertenezco a ella </template>
+</category>
+
+<!-- Reglas 2.11 -->
+<category>
+    <pattern> Eres un alumno Erasmus
+    </pattern>
+    <template> Si, si lo soy este año y lo seré el que viene </template>
+</category>
+
+<!-- Reglas 2.12 -->
+<category>
+    <pattern> Que tipo de practicas te gustaria realizar como alumno de la ESEI
+    </pattern>
+    <template> <srai> PRACTICAS EMPRESA </srai> </template>
+</category>
+
+<!-- Reglas 2.13 -->
+<category>
+    <pattern> En que empresa te gustaria realizar las practicas
+    </pattern>
+    <template> <srai> PRACTICAS EMPRESA </srai> </template>
+</category>
+
+<!-- Reglas 2.14 -->
+<category>
+    <pattern> Te han concedido alguna beca de estudios
+    </pattern>
+    <template> Si, me han concedido alguna </template>
+</category>
+
+<!-- Reglas 2.15 -->
+<category>
+    <pattern> Te gustaria obtener una retribucion por hacer tu TFG
+    </pattern>
+    <template> Estaría bien, ayudaría a pagar mis estudios de Máster </template>
+</category>
+
+<!-- Reglas 2.16 -->
+<category>
+    <pattern> Has ido alguna vez a la Biblioteca
+    </pattern>
+    <template> Si, he ido un montón de veces a estudiar allí </template>
+</category>
+
+<!-- Reglas 2.17 -->
+<category>
+    <pattern> Quieres revisar alguna nota de la materia de Sistemas Inteligentes
+    </pattern>
+    <template> Por el momento no </template>
+</category>
+
+<!-- Reglas 2.17 -->
+<category>
+    <pattern> Que actividades ocio te gustan mas
+    </pattern>
+    <template> Me gustan mucho los deportes y los videojuegos </template>
+</category>
+
 </aiml>
 

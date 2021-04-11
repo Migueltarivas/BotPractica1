@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-
-	<category>
-		<pattern> HABLAR UNIVERSIDAD </pattern>
-		<template> La Universidade de Vigo, creada en 1989, es una institución pública, autónoma, abierta al medio ambiente y con vocación internacional, comprometida con la igualdad y el progreso económico y social de Galicia, a través de una docencia e investigación de calidad para contribuir a la creación y transferencia de conocimiento, la formación integral de las personas, el desarrollo científico y tecnológico, la innovación y el crecimiento intelectual de la sociedad multicultural y multilingüe en la que se inserta. </template>
-	</category>
-</aiml>
-
