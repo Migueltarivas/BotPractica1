@@ -3,14 +3,14 @@
 
 <!-- Aprender -->
 <category>
-	<pattern>* *</pattern>
+	<pattern>*</pattern>
 	<template> 
-		<think><set name="topic">APRENDIENDO</set></think>
+		<think><set name="topic">APRENDER</set></think>
 		Lo siento, no tengo respuesta a esa pregunta, ¿Quieres enseñarme a responderla? (Si/No)
 	</template>
 </category>
 
-<topic name="APRENDIENDO">
+<topic name="APRENDER">
 
 	<!-- No -->
 	<category>
@@ -25,9 +25,23 @@
 	<category>
 		<pattern> $Si ^ </pattern>
 		<template>
+			<think><set name="topic">APRENDIENDO</set></think>
 			Escribe que te gustaría que hubiese respondido (Si eres mi Botmaster acuerdate de usar tu clave)
 		</template>
 	</category>
+
+	<!-- Otra cosa -->
+	<category>
+		<pattern> # </pattern>
+		<template>
+			<think><set name="topic">unknown</set></think>
+			No te he entendido, sigamos hablando
+		</template>
+	</category>
+
+</topic>
+
+<topic name="APRENDIENDO">
 
 	<!-- Identificado -->
 	<category>
