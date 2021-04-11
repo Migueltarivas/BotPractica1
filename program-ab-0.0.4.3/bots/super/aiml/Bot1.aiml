@@ -92,53 +92,12 @@
 
 <!-- Aprender -->
 
-	<category>
-		<pattern> NO CONOZCO </pattern>
-		<template>No conozco la respuesta a esa pregunta ¿quieres que la guarde?</template>
-	</category>
-
-	<category>
-		<pattern>*</pattern>
-		<template><think><set name="pregunta"><star/></set></think>
-			<srai> NO CONOZCO </srai>
-		</template>
-	</category>
-
-	<category>
-		<pattern> SI </pattern>
-		<that> No conozco * </that>
-		<template>
-			Qué respuesta quieres que guarde para "<get name="pregunta"/>"?
-		</template>
-	</category>
-
-	<category>
-		<pattern>*</pattern>
-		<that> * respuesta quieres que guarde * </that>
-		<template>
-			<think><set name="respuesta"><star/></set></think>
-			<learn>
-				<category>
-					<pattern>
-						<eval><get name="pregunta"/></eval>
-					</pattern>
-					<template>
-						<eval><get name="respuesta"></get></eval>
-					</template>
-
-				</category>
-			</learn>
-			(Respuesta guardada "<get name="pregunta"/> -> <get name="respuesta"/>")
-		</template>
-	</category>
-
  <!-- Miscelánea -->
 
 	<category>
 		<pattern> ^ <set>saludos</set> ^ </pattern>
 		<template>Holaa, buenos dias :D</template>
 	</category>
-
 
 
 	<category>
@@ -605,23 +564,5 @@ Aún no lo he decidido, dependerá de las opciones en el momento en el que decid
     <template> Me gustan mucho los deportes y los videojuegos </template>
 </category>
 
-<category>
-	<pattern>Cuenta hasta 10</pattern>
-	<template>
-		<think>
-			<set var="contador">primero</set>
-		</think>
-		<condition var="contador">
-			<li><value>decimo</value><get var="contador"/></li>
-			<li><get var="contador"/>
-			<think>
-						<set var="contador">
-							<map name="siguiente"><get var="contador"/></map>
-						</set>
-					</think><loop/></li>
-		</condition>
-				
-	</template>
-	</category>
 </aiml>
 

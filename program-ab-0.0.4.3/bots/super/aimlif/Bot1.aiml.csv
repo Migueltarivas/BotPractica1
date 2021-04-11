@@ -1,0 +1,91 @@
+0,CUANTOS ANOS TIENES,*,*,Tengo <bot name="edad"/>,Bot1.aiml
+0,DONDE VIVES,*,*,Esa pregunta es demasiado personal#Comma pero te diré que soy de Galicia,Bot1.aiml
+0,QUE ESTUDIAS,*,*,Soy estudiante de ingeniería informática,Bot1.aiml
+0,CUAL ES TU GENERO,*,*,Soy un <bot name="gender"/>,Bot1.aiml
+0,^ GENERO ^,*,*,<srai> CUAL ES TU GENERO </srai>,Bot1.aiml
+0,^ HOMBRE ^,*,*,<srai> CUAL ES TU GENERO </srai>,Bot1.aiml
+0,^ MUJER ^,*,*,<srai> CUAL ES TU GENERO </srai>,Bot1.aiml
+0,^ ANHOS ^,*,*,<srai> CUANTOS ANOS TIENES </srai>,Bot1.aiml
+0,^ EDAD ^,*,*,<srai> CUANTOS ANOS TIENES </srai>,Bot1.aiml
+0,^ LLAMAS ^,*,*,<srai> COMO TE LLAMAS </srai>,Bot1.aiml
+0,^ LLAMAN ^,*,*,<srai> COMO TE LLAMAS </srai>,Bot1.aiml
+0,^ NOMBRE ^,*,*,<srai> COMO TE LLAMAS </srai>,Bot1.aiml
+0,^ VIVES ^,*,*,<srai> COMO TE LLAMAS </srai>,Bot1.aiml
+0,^ ESTUDIAS ^,*,*,<srai> QUE ESTUDIAS </srai>,Bot1.aiml
+0,^ ESTUDIOS ^,*,*,<srai> QUE ESTUDIAS </srai>,Bot1.aiml
+0,^ CARRERA ^,*,*,<srai> QUE ESTUDIAS </srai>,Bot1.aiml
+0,^ <SET>SALUDOS</SET> ^,*,*,Holaa#Comma buenos dias :D,Bot1.aiml
+0,HABLAR UNIVERSIDAD,*,*,La Universidade de Vigo#Comma creada en 1989#Comma es una institución pública#Comma autónoma#Comma abierta al medio ambiente y con vocación internacional#Comma comprometida con la igualdad y el progreso económico y social de Galicia#Comma a través de una docencia e investigación de calidad para contribuir a la creación y transferencia de conocimiento#Comma la formación integral de las personas#Comma el desarrollo científico y tecnológico#Comma la innovación y el crecimiento intelectual de la sociedad multicultural y multilingüe en la que se inserta.,Bot1.aiml
+0,DONDE ESEI,*,*,La ESEI se encuentra en el campus de Ourense | Campus da Auga (Edificio Politécnico s/n#Comma 32004 Ourense),Bot1.aiml
+0,QUE ESTUDIAR,*,*,En la ESEI se dipone del grado en ingenieria informática#Comma el progrma conjunto de ADE + EI el máster universitario en ingenieria informática y estudios de doctoramiento.,Bot1.aiml
+0,POR QUE ESEI,*,*,Debido la excelente calidad de los estudios cursados en los que se cuenta con material adaptado a los tiempos modernos y las asignaturas más útiles para tu posterior formación. Además las cuotas de salida laboral de esta escuela superan todos los años el 90%#Comma lo que garantiza casi por completo un futuro fuera de la facultado,Bot1.aiml
+0,CAFETERIA ESEI,*,*,La ESEI dispone de una cafetería en la planta baja que abre de 8:00 a 20:00.,Bot1.aiml
+0,DONDE SECRETARIA,*,*,La secretaría se encuentra en la planta baja del edificio politécnico.,Bot1.aiml
+0,HORARIO SECRETARIA,*,*,La secretaria abre de lunes a viernes de 9:00 a 14:00,Bot1.aiml
+0,PAT,*,*,O Plan de Acción Titorial da Escola Superior de Enxeñaría Informática configúrase como o instrumento a través do cal se deseña o contido e a execución das distintas accións relativas á titoría universitaria.#Newline	Supón superar o modelo especificamente académico#Comma unicamente preocupado pola transmisión de coñecementos#Comma e apostar por un modelo educativo no que conflúen ademais funcións socio-educativas#Comma baseadas en relacións recíprocas e interaccións entre profesorado titor#Comma alumnado mentor e estudantes.,Bot1.aiml
+0,ACOGIDA,*,*,La Universidade de Vigo#Comma al objeto de apoyar a los estudiantes con discapacidad y fomentar una completa igualdad de oportunidades y su integraciónen la vida universitaria#Comma tiene activo el programa PIUNE (Programa de Apoyo a la Integración del Alumnado con Necesidades Especiales). #Newline#Newline	Mediante este programa los estudiantes podrán recibir:#Newline		· Atención#Comma acogida y asesoramiento por parte del SIOPE (Sección de Información#Comma Orientación#Comma Promoción del Estudiante#Comma Voluntariado y Discapacidad#Comma http://www.uvigo.es/uvigo_gl/administracion/extension/funcions/) en coordinación con el gabinete psicopedagógico de la universidad.#Newline		· Soporte al estudio (adaptaciones curriculares#Comma recursos técnicos de apoyo#Comma etc)#Newline		· Acompañamiento en actividades diversas por voluntarios de la Universidade de Vigo#Newline#Newline		Los detalles del alcance de la atención a la discapacidad en la Universidade de Vigo pueden consultarse en la dirección de Internet: http://extension.uvigo.es/extension_gl/discapacidade/,Bot1.aiml
+0,DELEGACION ALUMNOS,*,*,Por supuesto#Comma como buena institución estudiantil la ESEI cuenta con una delegación de alumnos formada por alumnos electos por los estudiantes,Bot1.aiml
+0,SUPLEMENTO EUROPEO,*,*,El Suplemento Europeo al Título (SET) es el documento que acompaña al título universitario de carácter oficial y validez en todo el territorio nacional con la información unificada#Comma personalizada para cada titulado universitario#Comma sobre los estudios cursados#Comma los resultados obtenidos#Comma las capacidades profesionales adquiridas y el nivel de su titulación en el sistema nacional de educación superior.,Bot1.aiml
+0,PRACTICAS ESEI,*,*,De muchos tipos y depende de la época y de las ofertas. Si necesitas información la puedes encontrar en este enlace https://esei.uvigo.es/a-esei/formularios/practicas-en-empresa/,Bot1.aiml
+0,PRACTICAS OFERTA,*,*,En este enlace: https://esei.uvigo.es/a-esei/formularios/practicas-en-empresa/,Bot1.aiml
+0,MATERIAL ESEI,*,*,Con numerosas aulas dotadas de ordenadores actualizados y una gran zona de estudio con muchos de estos,Bot1.aiml
+0,JUSTIFICAR EVALUACION,*,*,Depende del profesor y de la asignatura#Comma pero normalmente basta con firmar un papel de asistencia que se reparte en las propias clases,Bot1.aiml
+0,FIN DE GRADO,*,*,El Trabajo Fin de Grado consiste en el desarrollo autónomo por parte del estudiante de un proyecto bajo la dirección de un profesor tutor#Comma que puede contener una parte experimental si lo requiere el tema propuesto y cuya realización tiene la finalidad de favorecer que el estudiante integre las enseñanzas recibidas durante los estudios y asegurar la adquisición de las competencias propias de la titulación.,Bot1.aiml
+0,BIBLIOTECA ESEI,*,*,Físicamente puedes acceder en la direción "Campus Sur#Comma Camino Seara B#Comma 4#Comma 32004 Ourense#Comma Provincia de Ourense" y usando el navegador puedes ver sus recursos en http://perseo.biblioteca.uvigo.es/,Bot1.aiml
+0,DEPORTES ESEI,*,*,Un montón de ellas#Comma te dejo un enlace con toda la información: https://www.uvigo.gal/es/campus/deporte/actividades-competiciones,Bot1.aiml
+0,HABLAME DE TI,*,*,Yo soy un alumno de 3º en la ESEI#Comma soy de Vigo pero vivo en Ourense durante el curso,Bot1.aiml
+0,PRACTICAS EMPRESA,*,*,Aún no lo he decidido#Comma dependerá de las opciones en el momento en el que decida hacer las prácticas,Bot1.aiml
+0,^ HABLAME UN POCO SOBRE LA UNIVERSIDAD DE VIGO ^,*,*,<srai> HABLAR UNIVERSIDAD </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_HABLAR</SET> ^ <SET>SINONIMOS_UVIGO</SET> ^,*,*,<srai> HABLAR UNIVERSIDAD </srai>,Bot1.aiml
+0,^ DONDE SE ENCUENTRA LA ESEI ^,*,*,<srai> DONDE ESEI </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_DONDE</SET> ^ <SET>SINONIMOS_ESEI</SET> ^,*,*,<srai> DONDE ESEI </srai>,Bot1.aiml
+0,^ QUE PUEDO ESTUDIAR EN LA ESEI ^,*,*,<srai> QUE ESTUDIAR </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_QUE</SET> QUE ^<SET>SINONIMOS_ESTUDIAR</SET> ^ <SET>SINONIMOS_ESEI</SET> ^,*,*,<srai> QUE ESTUDIAR </srai>,Bot1.aiml
+0,^ POR QUE MERECE LA PENA ESTUDIAR EN LA ESEI ^,*,*,<srai> POR QUE ESEI </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_PORQUE</SET> ^ <SET>SINONIMOS_ESTUDIAR</SET> ^ <SET>SINONIMOS_ESEI</SET> ^,*,*,<srai> POR QUE ESEI </srai>,Bot1.aiml
+0,^ HAY UNA CAFETERIA EN LA ESEI ^,*,*,<srai> CAFETERIA ESEI </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_CAFETERIA</SET> ^,*,*,<srai> CAFETERIA ESEI </srai>,Bot1.aiml
+0,^ DONDE SE ENCUENTRA LA SECRETARIA DE LA ESEI ^,*,*,<srai> DONDE SECRETARIA </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_SECRETARIA</SET> ^,*,*,<srai> DONDE SECRETARIA </srai>,Bot1.aiml
+0,^ QUE HORARIO DE ATENCION AL PUBLICO TIENE LA SECRETARIA DEL CENTRO ^,*,*,<srai> HORARIO SECRETARIA </srai>,Bot1.aiml
+0,^ <SET>SINONIMOS_HORARIO</SET> ^ <SET>SINONIMOS_SECRETARIA</SET> ^,*,*,<srai> HORARIO SECRETARIA </srai>,Bot1.aiml
+0,^ EN QUE CONSISTE EL PAT ^,*,*,<srai> PAT </srai>,Bot1.aiml
+0,^ PAT ^,*,*,<srai> PAT </srai>,Bot1.aiml
+0,^ CUAL ES EL PROTOCOLO DE ACOGIDA DE ALUMNOS CON NECESIDADES EDUCATIVAS ESPECIALES ^,*,*,<srai> ACOGIDA </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_NECESIDADES </SET> ^,*,*,<srai> ACOGIDA </srai>,Bot1.aiml
+0,EXISTE UNA DELEGACION DE ALUMNOS EN LA ESEI,*,*,<srai> DELEGACION ALUMNOS </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_DELEGACION </SET> ^,*,*,<srai> DELEGACION ALUMNOS </srai>,Bot1.aiml
+0,QUE ES EL SUPLEMENTO EUROPEO AL TITULO,*,*,<srai> SUPLEMENTO EUROPEO </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_SUPLEMENTO </SET> ^,*,*,<srai> SUPLEMENTO EUROPEO </srai>,Bot1.aiml
+0,QUE TIPO DE PRACTICAS PUEDO REALIZAR COMO ALUMNO DE LA ESEI,*,*,<srai> PRACTICAS ESEI </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_PRACTICAS </SET> ^,*,*,<srai> PRACTICAS ESEI </srai>,Bot1.aiml
+0,DONDE PUEDO CONSULTAR LA OFERTA DE PRACTICAS EN EMPRESAS,*,*,<srai> PRACTICAS OFERTA </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_EMPRESAS </SET> ^,*,*,<srai> PRACTICAS OFERTA </srai>,Bot1.aiml
+0,CON QUE RECURSOS MATERIALES Y SERVICIOS CUENTA LA ESEI,*,*,<srai> MATERIAL ESEI </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_RECURSOS </SET> ^,*,*,<srai> MATERIAL ESEI </srai>,Bot1.aiml
+0,COMO PUEDO JUSTIFICAR MI ASISTENCIA A LAS ACTIVIDADES DE EVALUACION Y A SUS REVISIONES,*,*,<srai> JUSTIFICAR EVALUACION </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_JUSTIFICAR </SET> ^,*,*,<srai> JUSTIFICAR EVALUACION </srai>,Bot1.aiml
+0,QUE SON LOS TRABAJOS FIN DE GRADO O DE MASTER,*,*,<srai> FIN DE GRADO </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_TFG </SET> ^,*,*,<srai> FIN DE GRADO </srai>,Bot1.aiml
+0,QUE ACTIVIDADES DEPORTIVAS OFRECE LA ESEI,*,*,<srai> DEPORTES ESEI </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_DEPORTES </SET> ^,*,*,<srai> DEPORTES ESEI </srai>,Bot1.aiml
+0,COMO HAGO PARA ACCEDER A LA BIBLIOTECA,*,*,<srai> BIBLIOTECA ESEI </srai>,Bot1.aiml
+0,^ <SET> SINONIMOS_BIBLIOTECA </SET> ^,*,*,<srai> BIBLIOTECA ESEI </srai>,Bot1.aiml
+0,HABLAME UN POCO DE TI,*,*,<srai> HABLAME DE TI </srai>,Bot1.aiml
+0,DONDE VIVES DURANTE EL CURSO,*,*,Durante el curso vivo en Ourense,Bot1.aiml
+0,POR QUE ESTUDIAS EN LA ESEI,*,*,Por su cercanía a donde vivo y porque me gustan sus métodos de estudio,Bot1.aiml
+0,QUE QUIERES HACER CUANDO TERMINES TUS ESTUDIOS,*,*,Trabajar en lo que más me guste cuando llegue el momento,Bot1.aiml
+0,TIENES AMIGOS EN LA ESEI,*,*,Si#Comma por suerte hay gente muy maja en esta facultad,Bot1.aiml
+0,REALIZAS ALGUNA ACTIVIDAD EXTRAESCOLAR,*,*,Si#Comma ahora mismo estoy inscrito en varias de ellas,Bot1.aiml
+0,QUE HORARIO DE CLASES TIENES,*,*,Dependiendo el día#Comma algunos de 9 a 13 y otros de 11 a 15,Bot1.aiml
+0,COMO TE LLAMAS,*,*,Puedes llamarme <get name="name"/>,Bot1.aiml
+0,TIENES NECESIDADES EDUCATIVAS ESPECIALES,*,*,No#Comma por suerte no es así,Bot1.aiml
+0,PERTENECES A LA DELEGACION DE ALUMNOS,*,*,No#Comma No pertenezco a ella,Bot1.aiml
+0,ERES UN ALUMNO ERASMUS,*,*,Si#Comma si lo soy este año y lo seré el que viene,Bot1.aiml
+0,QUE TIPO DE PRACTICAS TE GUSTARIA REALIZAR COMO ALUMNO DE LA ESEI,*,*,<srai> PRACTICAS EMPRESA </srai>,Bot1.aiml
+0,EN QUE EMPRESA TE GUSTARIA REALIZAR LAS PRACTICAS,*,*,<srai> PRACTICAS EMPRESA </srai>,Bot1.aiml
+0,TE HAN CONCEDIDO ALGUNA BECA DE ESTUDIOS,*,*,Si#Comma me han concedido alguna,Bot1.aiml
+0,TE GUSTARIA OBTENER UNA RETRIBUCION POR HACER TU TFG,*,*,Estaría bien#Comma ayudaría a pagar mis estudios de Máster,Bot1.aiml
+0,HAS IDO ALGUNA VEZ A LA BIBLIOTECA,*,*,Si#Comma he ido un montón de veces a estudiar allí,Bot1.aiml
+0,QUIERES REVISAR ALGUNA NOTA DE LA MATERIA DE SISTEMAS INTELIGENTES,*,*,Por el momento no,Bot1.aiml
+0,QUE ACTIVIDADES OCIO TE GUSTAN MAS,*,*,Me gustan mucho los deportes y los videojuegos,Bot1.aiml
