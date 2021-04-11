@@ -605,5 +605,23 @@ Aún no lo he decidido, dependerá de las opciones en el momento en el que decid
     <template> Me gustan mucho los deportes y los videojuegos </template>
 </category>
 
+<category>
+	<pattern>Cuenta hasta 10</pattern>
+	<template>
+		<think>
+			<set var="contador">primero</set>
+		</think>
+		<condition var="contador">
+			<li><value>decimo</value><get var="contador"/></li>
+			<li><get var="contador"/>
+			<think>
+						<set var="contador">
+							<map name="siguiente"><get var="contador"/></map>
+						</set>
+					</think><loop/></li>
+		</condition>
+				
+	</template>
+	</category>
 </aiml>
 
