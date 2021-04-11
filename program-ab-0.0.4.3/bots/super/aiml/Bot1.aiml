@@ -31,62 +31,62 @@
 
 	<category>
 		<pattern> ^ genero ^ </pattern>
-		<template> <srai> CUAL ES TU GENERO </srai>
+		<template> <srai> CUAL ES TU GENERO </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ hombre ^ </pattern>
-		<template> <srai> CUAL ES TU GENERO </srai>
+		<template> <srai> CUAL ES TU GENERO </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ mujer ^ </pattern>
-		<template> <srai> CUAL ES TU GENERO </srai>
+		<template> <srai> CUAL ES TU GENERO </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ anhos ^ </pattern>
-		<template> <srai> CUANTOS ANOS TIENES </srai>
+		<template> <srai> CUANTOS ANOS TIENES </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ edad ^ </pattern>
-		<template> <srai> CUANTOS ANOS TIENES </srai>
+		<template> <srai> CUANTOS ANOS TIENES </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ llamas ^ </pattern>
-		<template> <srai> COMO TE LLAMAS </srai>
+		<template> <srai> COMO TE LLAMAS </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ llaman ^ </pattern>
-		<template> <srai> COMO TE LLAMAS </srai>
+		<template> <srai> COMO TE LLAMAS </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ nombre ^ </pattern>
-		<template> <srai> COMO TE LLAMAS </srai>
+		<template> <srai> COMO TE LLAMAS </srai></template>
 	</category>
 	
 	<category>
 		<pattern> ^ vives ^ </pattern>
-		<template> <srai> COMO TE LLAMAS </srai>
+		<template> <srai> COMO TE LLAMAS </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ estudias ^ </pattern>
-		<template> <srai> QUE ESTUDIAS </srai>
+		<template> <srai> QUE ESTUDIAS </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ estudios ^ </pattern>
-		<template> <srai> QUE ESTUDIAS </srai>
+		<template> <srai> QUE ESTUDIAS </srai></template>
 	</category>
 
 	<category>
 		<pattern> ^ carrera ^ </pattern>
-		<template> <srai> QUE ESTUDIAS </srai>
+		<template> <srai> QUE ESTUDIAS </srai></template>
 	</category>
 
 
@@ -138,6 +138,8 @@
 		<pattern> ^ <set>saludos</set> ^ </pattern>
 		<template>Holaa, buenos dias :D</template>
 	</category>
+
+
 
 	<category>
 	<pattern> HABLAR UNIVERSIDAD </pattern>
@@ -602,6 +604,27 @@ Aún no lo he decidido, dependerá de las opciones en el momento en el que decid
     </pattern>
     <template> Me gustan mucho los deportes y los videojuegos </template>
 </category>
+
+<category>
+	<pattern>Cuenta hasta 10</pattern>
+	<template>
+
+		<think>
+			<set var="contador">1</set>
+		</think>
+
+		<get var="contador"/>
+		<condition var="contador">
+			<li><value><get var="salida"/></value></li>
+			<li>
+				<think>
+					<set var="contador">
+						<map name="siguiente"><get var="contador"/></map>
+					</set>
+				</think>
+			</li>
+		</condition>		
+	</template>
 
 </aiml>
 
