@@ -25,11 +25,70 @@
 	</category>
 
 	<category>
-		<pattern> CUAL ES TU GÉNERO </pattern>
+		<pattern> CUAL ES TU GENERO </pattern>
 		<template> Soy un <bot name="gender"/></template>
 	</category>
 
+	<category>
+		<pattern> ^ genero ^ </pattern>
+		<template> <srai> CUAL ES TU GENERO </srai>
+	</category>
+
+	<category>
+		<pattern> ^ hombre ^ </pattern>
+		<template> <srai> CUAL ES TU GENERO </srai>
+	</category>
+
+	<category>
+		<pattern> ^ mujer ^ </pattern>
+		<template> <srai> CUAL ES TU GENERO </srai>
+	</category>
+
+	<category>
+		<pattern> ^ anhos ^ </pattern>
+		<template> <srai> CUANTOS ANOS TIENES </srai>
+	</category>
+
+	<category>
+		<pattern> ^ edad ^ </pattern>
+		<template> <srai> CUANTOS ANOS TIENES </srai>
+	</category>
+
+	<category>
+		<pattern> ^ llamas ^ </pattern>
+		<template> <srai> COMO TE LLAMAS </srai>
+	</category>
+
+	<category>
+		<pattern> ^ llaman ^ </pattern>
+		<template> <srai> COMO TE LLAMAS </srai>
+	</category>
+
+	<category>
+		<pattern> ^ nombre ^ </pattern>
+		<template> <srai> COMO TE LLAMAS </srai>
+	</category>
 	
+	<category>
+		<pattern> ^ vives ^ </pattern>
+		<template> <srai> COMO TE LLAMAS </srai>
+	</category>
+
+	<category>
+		<pattern> ^ estudias ^ </pattern>
+		<template> <srai> QUE ESTUDIAS </srai>
+	</category>
+
+	<category>
+		<pattern> ^ estudios ^ </pattern>
+		<template> <srai> QUE ESTUDIAS </srai>
+	</category>
+
+	<category>
+		<pattern> ^ carrera ^ </pattern>
+		<template> <srai> QUE ESTUDIAS </srai>
+	</category>
+
 
 <!-- Aprender -->
 
